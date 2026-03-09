@@ -1,9 +1,15 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+import { Header } from './components/header/header';
+import { WeatherSearch } from './components/weather-search/weather-search';
+import { WeatherDisplay } from './components/weather-display/weather-display';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [FormsModule,HttpClientModule,Header,WeatherSearch,WeatherDisplay],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

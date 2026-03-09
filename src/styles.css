@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+background: linear-gradient(135deg,#4facfe,#00f2fe);
+min-height:100vh;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-card{
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.glass{
+background:rgba(255,255,255,0.2);
+backdrop-filter:blur(10px);
+border-radius:15px;
+}
+
+.center-box{
+max-width:700px;
+margin:auto;
+}
+
+.weather-icon{
+font-size:60px;
+}

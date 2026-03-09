@@ -1,0 +1,36 @@
+<div class="container mt-5 center-box">
+
+<div class="card weather-card p-4 glass">
+
+<h4 class="text-center mb-4">🔍 Search City Weather</h4>
+
+<div class="input-group input-group-lg">
+
+<input
+type="text"
+class="form-control"
+placeholder="Enter City"
+[(ngModel)]="cityModel.name"
+(keyup.enter)="searchCity()"
+/>
+
+
+<button
+class="btn btn-primary px-4"
+(click)="searchCity()"
+>
+
+<span *ngIf="!loading">Search</span>
+
+<span *ngIf="loading">
+<span class="spinner-border spinner-border-sm"></span>
+ Loading
+</span>
+
+</button>
+
+</div>
+
+</div>
+
+</div>

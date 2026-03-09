@@ -1,0 +1,56 @@
+<div class="container mt-5 center-box">
+
+<div class="card weather-card glass p-4 text-center">
+
+<h3 class="mb-3">🌤 Current Weather</h3>
+
+<div *ngIf="weatherData.name==''" class="text-muted">
+Search a city to view weather
+</div>
+
+<div *ngIf="weatherData.name!=''">
+
+<div class="weather-icon mb-3">
+☀
+</div>
+
+<h2 class="fw-bold">{{weatherData.name}}</h2>
+
+<hr>
+
+<div class="row text-center mt-4">
+
+<div class="col-md-4 mb-3">
+
+<div class="card p-3 shadow-sm">
+<h6>🌡 Temperature</h6>
+<h4 class="text-primary">{{weatherData.temperature}} °C</h4>
+</div>
+
+</div>
+
+<div class="col-md-4 mb-3">
+
+<div class="card p-3 shadow-sm">
+<h6>💨 Wind Speed</h6>
+<h4 class="text-success">{{weatherData.windspeed}} km/h</h4>
+</div>
+
+</div>
+
+<div class="col-md-4 mb-3">
+
+<div class="card p-3 shadow-sm">
+<h6>🌥 Weather Code</h6>
+<h4 class="text-danger">{{weatherData.weathercode}}</h4>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>

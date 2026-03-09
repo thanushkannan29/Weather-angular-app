@@ -1,3 +1,10 @@
+BehaviorSubject → holds last value
+Observable → other components subscribe
+next() → push new data
+
+
+
+
 # WeatherAngularApp
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
